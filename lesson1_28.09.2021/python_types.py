@@ -1,7 +1,6 @@
 list_ = ["a", "b", "dsf", 6]
 l = list_
 
-
 for ind in range(len(list_)):
     print(ind, list_[ind])
 
@@ -14,12 +13,10 @@ for i, element in enumerate(list_, start=1):
 
 print(list_)
 
-
 books_authors = {"Гарри Поттер": "Роулинг", "Зеленая миля": "Стивен"}
 
 for k, v in books_authors.items():
     print(k, v, sep=", ")
-
 
 print(list(books_authors.items()))
 
@@ -31,10 +28,8 @@ new_dict["1"] = 42332
 
 print(books_authors)
 
-
 new_set = set([1, 2, 3, 3])
 print(new_set)
-
 
 lst = [1, 2, 3, 4, 5, 6]
 bilst = [[1, 2], [3, 4], [5, 6]]
@@ -46,9 +41,8 @@ print(bilst[2], bilst[2][1])
 def my_name(i):
     print(i, "Руслан")
 
+
 my_name(2)
 
-
 if __name__ == '__main__':
-
     my_name(1)
