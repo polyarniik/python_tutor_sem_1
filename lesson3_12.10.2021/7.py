@@ -22,7 +22,17 @@ if __name__ == '__main__':
             for k in range(len(matrix1)):
                 matrix3[i][j] += matrix1[i][k] * matrix2[k][j]
 
+    # "динамическое" создание матрицы
+    matrix4 = []
     for i in range(len(matrix1)):
-        for j in range(len(matrix2)):
+        matrix4.append([])
+        for j in range(len(matrix1)):
+            matrix4[i].append(0)
+            for k in range(len(matrix1)):
+                matrix4[i][j] += matrix1[i][k] * matrix2[k][j]
+
+    print(matrix4)
+    for i in range(len(matrix1)):
+        for j in range(len(matrix1)):
             print(matrix3[i][j], end=" ")
         print()
